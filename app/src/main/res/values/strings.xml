@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">IAK Beginner</string>
+
+    <!--Text String-->
+    <string name="hbd_text">Happy Birthday</string>
+    <string name="from">From, ME</string>
+    <string name="your_name">Your Name</string>
+    <string name="click">Click</string>
+
+</resources>
