@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
-            case R.id.order:
-                Intent intent = new Intent(this, OrderActivity.class);
+            case R.id.contact:
+                Intent intent = new Intent(this, ContactActivity.class);
                 startActivity(intent);
                 break;
             case R.id.about:

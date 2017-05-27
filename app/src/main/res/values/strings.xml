@@ -1,10 +1,30 @@
 <resources>
-    <string name="app_name">IAK Beginner</string>
+    <string name="app_name">Sch Mobile Apps</string>
 
     <!--Text String-->
     <string name="hbd_text">Happy Birthday</string>
     <string name="from">From, ME</string>
     <string name="your_name">Your Name</string>
     <string name="click">Click</string>
+    <string name="about">OUVAL RESEARCH® were  established in  1997 by the founders,
+        who had idealism to engendering creative and flexible products,
+        while at the same time representing the  youth lifestyle.
+        \nThe idea was encouraged by a skateboarding community, which was not only about sport,
+        but it was also became a certain lifestyle.
+        That idealistic thought then was exposed into style of fashion that could be used by either local or international community.
+        \n This Application is mobile version from Ouval Research web online and who had the same features.
+ </string>
+    <string name="contact">You can find us on \n Instagram: @Ouvalresearch
+    \n Twitter: @ouvalresearch \n Facebook: Ouval Research \n Website: rschtruetype.com</string>
+    <string name="price_80">IDR 80,000.00</string>
+    <string name="price_110">IDR 110,000.00</string>
+    <string name="price_180">IDR 180,000.00</string>
+    <string name="price_190">IDR 190,000.00</string>
+    <string name="price_195">IDR 195,000.00</string>
+    <string name="price_200">IDR 200,000.00</string>
+    <string name="price_235">IDR 235,000.00</string>
+    <string name="price_270">IDR 270,000.00</string>
+    <string name="price_310">IDR 310,000.00</string>
+    <string name="price_350">IDR 350,000.00</string>
 
 </resources>

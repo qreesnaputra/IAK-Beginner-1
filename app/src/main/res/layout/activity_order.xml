@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -9,20 +9,114 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_horizontal">
 
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/your_name"
-        android:textSize="@dimen/text_20"
-        android:id="@+id/mTextNama"/>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <TextView
         android:layout_marginBottom="8dp"
         android:textStyle="bold"
         android:textSize="@dimen/text_14"
         android:textAllCaps="true"
-        android:text="Menu"
+        android:text="nama barang:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/mTextNmBrg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_12"/>
+
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_14"
+        android:textAllCaps="true"
+        android:text="nama:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/mTextNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_12"/>
+
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_14"
+        android:textAllCaps="true"
+        android:text="alamat lengkap:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/mAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_12"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_14"
+        android:textAllCaps="true"
+        android:text="kode pos:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/mKodePos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_12"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_14"
+        android:textAllCaps="true"
+        android:text="nomor telepon:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/mTelepon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_14"
+        android:textAllCaps="true"
+        android:text="email:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/mEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_14"
+        android:textAllCaps="true"
+        android:text="Size"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -33,29 +127,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
     </Spinner>
-
-    <TextView
-        android:layout_marginBottom="8dp"
-        android:textStyle="bold"
-        android:textSize="@dimen/text_14"
-        android:textAllCaps="true"
-        android:text="Toping"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <RadioGroup
-        android:layout_marginBottom="8dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <RadioButton
-            android:text="Susu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <RadioButton
-            android:text="Coklat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </RadioGroup>
 
     <TextView
         android:layout_marginBottom="8dp"
@@ -92,6 +163,7 @@
             android:id="@+id/mButtonPlus"
             android:onClick="onClickPlus"/>
     </LinearLayout>
+
     <TextView
         android:layout_marginBottom="8dp"
         android:textSize="@dimen/text_17"
@@ -118,3 +190,4 @@
             android:onClick="onClickOrder"/>
     </LinearLayout>
 </LinearLayout>
+</ScrollView>

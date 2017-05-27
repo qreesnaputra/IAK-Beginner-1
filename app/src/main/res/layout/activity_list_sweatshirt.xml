@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_marginBottom="@dimen/text_8"
-            android:onClick="onOrder"
+            android:onClick="onOrderSweat"
             app:cardCornerRadius="4dp">
 
             <LinearLayout
@@ -35,7 +35,7 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/text1"
+                        android:id="@+id/textSweat1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -46,8 +46,8 @@
                         />
 
                     <TextView
-                        android:layout_below="@+id/text1"
-                        android:id="@+id/text1_1"
+                        android:layout_below="@+id/textSweat1"
+                        android:id="@+id/textSweat1_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -58,8 +58,8 @@
                         />
 
                     <TextView
-                        android:layout_below="@+id/text1_1"
-                        android:id="@+id/text1_2"
+                        android:layout_below="@+id/textSweat1_1"
+                        android:id="@+id/textSweat1_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -76,7 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_marginBottom="@dimen/text_8"
-            android:onClick="onOrder"
+            android:onClick="onOrderSweat2"
             app:cardCornerRadius="4dp">
 
             <LinearLayout
@@ -95,7 +95,7 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/text2"
+                        android:id="@+id/textSweat2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -106,8 +106,8 @@
                         />
 
                     <TextView
-                        android:layout_below="@+id/text2"
-                        android:id="@+id/text2_1"
+                        android:layout_below="@+id/textSweat2"
+                        android:id="@+id/textSweat2_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -118,8 +118,8 @@
                         />
 
                     <TextView
-                        android:layout_below="@+id/text2_1"
-                        android:id="@+id/text2_2"
+                        android:layout_below="@+id/textSweat2_1"
+                        android:id="@+id/textSweat2_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -136,7 +136,7 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_marginBottom="@dimen/text_8"
-            android:onClick="onOrder"
+            android:onClick="onOrderSweat3"
             app:cardCornerRadius="4dp">
 
             <LinearLayout
@@ -155,7 +155,7 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/text3"
+                        android:id="@+id/textSweat3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -166,8 +166,8 @@
                         />
 
                     <TextView
-                        android:layout_below="@+id/text3"
-                        android:id="@+id/text3_1"
+                        android:layout_below="@+id/textSweat3"
+                        android:id="@+id/textSweat3_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -178,8 +178,8 @@
                         />
 
                     <TextView
-                        android:layout_below="@+id/text3_1"
-                        android:id="@+id/text3_2"
+                        android:layout_below="@+id/textSweat3_1"
+                        android:id="@+id/textSweat3_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -196,7 +196,7 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_marginBottom="@dimen/text_8"
-            android:onClick="onOrder"
+            android:onClick="onOrderSweat4"
             app:cardCornerRadius="4dp">
 
             <LinearLayout
@@ -215,7 +215,7 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/text4"
+                        android:id="@+id/textSweat4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -226,8 +226,8 @@
                         />
 
                     <TextView
-                        android:layout_below="@+id/text4"
-                        android:id="@+id/text4_1"
+                        android:layout_below="@+id/textSweat4"
+                        android:id="@+id/textSweat4_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -238,8 +238,8 @@
                         />
 
                     <TextView
-                        android:layout_below="@+id/text4_1"
-                        android:id="@+id/text4_2"
+                        android:layout_below="@+id/textSweat4_1"
+                        android:id="@+id/textSweat4_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -256,7 +256,7 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_marginBottom="@dimen/text_8"
-            android:onClick="onOrder"
+            android:onClick="onOrderSweat5"
             app:cardCornerRadius="4dp">
 
             <LinearLayout
@@ -275,7 +275,7 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/text5"
+                        android:id="@+id/textSweat5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -286,8 +286,8 @@
                         />
 
                     <TextView
-                        android:layout_below="@+id/text5"
-                        android:id="@+id/text5_1"
+                        android:layout_below="@+id/textSweat5"
+                        android:id="@+id/textSweat5_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -298,8 +298,8 @@
                         />
 
                     <TextView
-                        android:layout_below="@+id/text5_1"
-                        android:id="@+id/text5_2"
+                        android:layout_below="@+id/textSweat5_1"
+                        android:id="@+id/textSweat5_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -316,7 +316,7 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_marginBottom="@dimen/text_8"
-            android:onClick="onOrder"
+            android:onClick="onOrderSweat6"
             app:cardCornerRadius="4dp">
 
             <LinearLayout
@@ -335,7 +335,7 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/text6"
+                        android:id="@+id/textSweat6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -346,8 +346,8 @@
                         />
 
                     <TextView
-                        android:layout_below="@+id/text6"
-                        android:id="@+id/text6_1"
+                        android:layout_below="@+id/textSweat6"
+                        android:id="@+id/textSweat6_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -358,8 +358,8 @@
                         />
 
                     <TextView
-                        android:layout_below="@+id/text6_1"
-                        android:id="@+id/text6_2"
+                        android:layout_below="@+id/textSweat6_1"
+                        android:id="@+id/textSweat6_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -376,7 +376,7 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_marginBottom="@dimen/text_8"
-            android:onClick="onOrder"
+            android:onClick="onOrderSweat7"
             app:cardCornerRadius="4dp">
 
             <LinearLayout
@@ -395,7 +395,7 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/text7"
+                        android:id="@+id/textSweat7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -406,8 +406,8 @@
                         />
 
                     <TextView
-                        android:layout_below="@+id/text7"
-                        android:id="@+id/text7_1"
+                        android:layout_below="@+id/textSweat7"
+                        android:id="@+id/textSweat7_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -418,8 +418,8 @@
                         />
 
                     <TextView
-                        android:layout_below="@+id/text7_1"
-                        android:id="@+id/text7_2"
+                        android:layout_below="@+id/textSweat7_1"
+                        android:id="@+id/textSweat7_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"

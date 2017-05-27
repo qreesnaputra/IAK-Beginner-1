@@ -23,13 +23,19 @@ import java.util.List;
 
 public class OrderActivity extends AppCompatActivity {
     EditText mTextNama;
+    EditText mTextNmBrg;
+    EditText mAlamat;
+    EditText mKodePos;
+    EditText mTelepon;
+    EditText mEmail;
     TextView mTextHarga, mTextQty;
     Button mButtonOrder, mButtonPlus, mButtonMin;
     //spinner
     Spinner mSpinnerMenu;
     List<String> mListMenu = new ArrayList<>();
-    int harga = 0;
+    String harga;
     int qty = 0;
+    String namaBarang;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +43,14 @@ public class OrderActivity extends AppCompatActivity {
         setContentView(R.layout.activity_order);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        Bundle extras = getIntent().getExtras();
+
+        mTextNmBrg = (EditText) findViewById(R.id.mTextNmBrg);
         mTextNama = (EditText) findViewById(R.id.mTextNama);
+        mAlamat = (EditText) findViewById(R.id.mAlamat);
+        mKodePos = (EditText) findViewById(R.id.mKodePos);
+        mTelepon = (EditText) findViewById(R.id.mTelepon);
+        mEmail = (EditText) findViewById(R.id.mEmail);
         mTextHarga = (TextView) findViewById(R.id.mTextHarga);
         mButtonOrder = (Button) findViewById(R.id.mButtonOrder);
         mTextQty = (TextView) findViewById(R.id.mTextQty);
@@ -46,13 +59,22 @@ public class OrderActivity extends AppCompatActivity {
 
         mSpinnerMenu = (Spinner) findViewById(R.id.mSpinnerMenu);
         mListMenu.add("------------");
-        mListMenu.add("Martabak");
-        mListMenu.add("Piscok Bakar");
-        mListMenu.add("Ice Cream Sandwich");
-        mListMenu.add("Lumpia Basah");
+        mListMenu.add("S");
+        mListMenu.add("M");
+        mListMenu.add("L");
+        mListMenu.add("XL");
+        mListMenu.add("XXL");
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, mListMenu);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mSpinnerMenu.setAdapter(dataAdapter);
+
+        namaBarang = extras.getString("namaBarang");
+        harga = extras.getString("hargaBarang");
+
+        mTextNmBrg.setText("" +  namaBarang);
+        mTextHarga.setText("" + harga);
+        mTextNmBrg.setFocusable(false);
+
     }
 
     public void onClickOrder(View view){
@@ -63,10 +85,22 @@ public class OrderActivity extends AppCompatActivity {
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, mTextNama.getText().toString());
         emailIntent.putExtra(Intent.EXTRA_TEXT,
                 "Saya pesan "
+                        + mTextNmBrg.getText()
+                        + " ukuran: "
                         + mSpinnerMenu.getSelectedItem()
-                        + " sebanyak "
+                        + " atas nama: "
+                        + mTextNama.getText()
+                        + " \nAlamat: "
+                        + mAlamat.getText()
+                        + " \nKode pos: "
+                        + mKodePos.getText()
+                        + " \nTelepon: "
+                        + mTelepon.getText()
+                        + " \nEmail: "
+                        + mEmail.getText()
+                        + "\nSebanyak "
                         + mTextQty.getText()
-                        + "buah, seharga "
+                        + "pcs, seharga "
                         + mTextHarga.getText());
         try {
             startActivity(Intent.createChooser(emailIntent, "Kirim email dengan.."));
@@ -77,32 +111,39 @@ public class OrderActivity extends AppCompatActivity {
     }
 
     public void onClickPlus(View view){
-        harga = harga + 5;
+        int hasil = 0;
         qty = qty +1;
+        hasil = qty * Integer.parseInt(harga);
         mTextQty.setText(qty+"");
-        mTextHarga.setText("$"+harga);
+        mTextHarga.setText(""+hasil);
     }
 
     public void onClickMin(View view){
-        if(harga !=0) {
-            harga = harga - 5;
+        int hasil = 0;
+        if(harga !="0") {
             qty = qty - 1;
+            hasil = qty * Integer.parseInt(harga);
             mTextQty.setText(qty+"");
-            mTextHarga.setText("$"+harga);
+            mTextHarga.setText(""+hasil);
         }
         else {
-            harga = 0;
+            harga = "0";
             qty = 0;
             mTextNama.setText("");
             mTextQty.setText(qty+"");
-            mTextHarga.setText("$"+harga);
+            mTextHarga.setText(""+harga);
         }
     }
 
     public void onClickReset (View v){
-        harga = 0;
+        harga = "0";
         qty = 0;
         mTextNama.setText("");
+        mAlamat.setText("");
+        mKodePos.setText("");
+        mTelepon.setText("");
+        mEmail.setText("");
+        mSpinnerMenu.setSelected(true);
         mTextHarga.setText("$"+harga);
         mTextQty.setText(qty+"");
     }
